@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+ 
+  <body>
+    <section id="seleccionarMascota">
+      <h1 class="titulo"> 🎊 MOKEPON! 🎊</h1>
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+ 
+      <div id="contenedorTarjetas" class="tarjetas">
+        
+      </div>
+ 
+      <button class="estiloSeleccionar" id="seleccionar">Seleccionar</button>
+    </section>
+ 
+    <section id="verMapa">
+      <h2 class="subtitulo">Recorre el mapa con tu personaje hasta <br> colisionar con algun oponente</h2>
+      <canvas id="mapa"></canvas>
+      <div class="controles">
+        <button class="botonControl" id="up" >⬆</button>
+        <div>
+          <button class="botonControl" id="left" >⬅</button>
+          <button class="botonControl" id="down">⬇</button>
+          <button class="botonControl" id="right" >➡</button>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="seleccionarAtaque">
+      <h1 class="titulo">🎊 MOKEPON! 🎊</h1>
+      <h2 class="subtitulo">Elige tu secuencia de 5 ataques:</h2>
+ 
+      <div class="tarjetasAtaques" id="contenedorAtaques">
+        
+      </div>
+      
+      <div id="notificaciones">
+        <p id="resultado">Mucha Suerte!</p>
+        
+        <section id="reset">
+          <button class="estiloBoton" id="botonReset">Reiniciar</button>
+        </section>
+      </div>
+ 
+      <div id="ataques">
+        <div class="perfilJugador">
+          <p>Jugador</p>
+          <p id="spanVidasJugador">0</p>
+          <p id="mascotaJugador"></p>
+          <p id="ataqueJugador"></p>
+        </div>
+        <div class="perfilResultados">
+          <p id="dibujo"></p>
+          <p>VS</p>
+          <p id="victorias"></p>
+        </div>
+        <div class="perfilEnemigo">
+          <p>Enemigo</p>
+          <p id="spanVidasEnemigo">0</p>
+          <p id="mascotaEnemigo"></p>
+          <p id="ataqueEnemigo"></p>
+        </div>
+      <div>
+    </section>
+    <script src="./js/codigo.js"></script>
+  </body>
+</html>

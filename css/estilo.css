@@ -1,0 +1,270 @@
+body {
+    font-family:fantasy;
+    background-color: #002B5B;
+}
+ 
+#seleccionarMascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.titulo {
+    color: green;
+    font-size: 35px;
+    text-shadow: 3px 3px;
+    -webkit-text-stroke: 2px black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.subtitulo {
+    color: yellow;
+    font-size: 33px;
+    -webkit-text-stroke: 2px black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 10px;
+}
+ 
+.tarjetaMascota {
+    display: flex;
+    width: 215px;
+    height: 95px;
+    background: #256D85;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    font-size: 23px;
+}
+ 
+.tarjetas img {
+    width: 80px;
+}
+ 
+#seleccionarAtaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+#notificaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    background: #256D85;
+    width: 220px;
+    border-radius:20px;
+    padding:10px;
+    margin-top:5px;  
+    border: 3px solid black;  
+}
+ 
+#notificaciones p{
+    -webkit-text-stroke: 1px black;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+#notificacionFinal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+}
+ 
+.estiloSeleccionar {
+    width:150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px;
+}
+ 
+.estiloBoton {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px;
+}
+ 
+.dibujoFinal {
+    width: 100px;
+}
+ 
+input {
+    display: none;
+}
+ 
+input:checked + label{
+    background-color: #A5F1E9;
+}
+ 
+#botonesAtaques {
+    display: flex;
+    align-items: center;
+}
+ 
+#ataques{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1px;
+    justify-content: center;
+    justify-items: center;
+}
+ 
+.perfilJugador, .perfilEnemigo{
+    display: flex;
+    background-color: #256D85;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 115px;
+    align-items: center;
+    margin-top: 8px;
+    border: 2px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.perfilResultados {
+    display: flex;
+    background-color: #256D85;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 110px;
+    align-items: center;
+    margin-top: 8px;
+    border: 2px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.tarjetasAtaques{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+ 
+#verMapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#verMapa button {
+    width: 80px;
+    height: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+#mapa {
+    border: 2px solid white;
+}
+ 
+.botonControl {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin: 10px;
+}
+ 
+@media (max-width: 450px) {
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        padding: 20;
+    }
+    .tarjetaMascota {
+        width: 240px;
+        height: 95px;
+        background: #256D85;
+        padding: 25px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 20px;
+        font-size: 23px;
+    }
+    #ataques{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1px;
+        justify-content: center;
+        justify-items: center;
+    }
+     
+    .perfilJugador, .perfilEnemigo{
+        display: flex;
+        background-color: #256D85;
+        border-radius: 20px;
+        flex-direction: column;
+        justify-content: center;
+        width: 115px;
+        align-items: center;
+        margin-top: 8px;
+        border: 2px solid black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+     
+    .perfilResultados {
+        display: flex;
+        background-color: #256D85;
+        border-radius: 20px;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 110px;
+        align-items: center;
+        margin-top: 8px;
+        border: 2px solid black;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+@media (max-width: 290px) {
+    .controles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+}
