@@ -26,11 +26,11 @@
       <h2 class="subtitulo">Recorre el mapa con tu personaje hasta <br> colisionar con algun oponente</h2>
       <canvas id="mapa"></canvas>
       <div class="controles">
-        <button class="botonControl" id="up" >⬆</button>
+        <button ontouchstart="moverMascotaJugador('up')" ontouchend="detenerCapipepo()" class="botonControl" id="up" >⬆</button>
         <div>
-          <button class="botonControl" id="left" >⬅</button>
-          <button class="botonControl" id="down">⬇</button>
-          <button class="botonControl" id="right" >➡</button>
+          <button ontouchstart="moverMascotaJugador('left')" ontouchend="detenerCapipepo()" class="botonControl" id="left" >⬅</button>
+          <button ontouchstart="moverMascotaJugador('down')" ontouchend="detenerCapipepo()" class="botonControl" id="down">⬇</button>
+          <button ontouchstart="moverMascotaJugador('right')" ontouchend="detenerCapipepo()" class="botonControl" id="right" >➡</button>
         </div>
       </div>
     </section>
