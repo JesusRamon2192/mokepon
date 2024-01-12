@@ -63,7 +63,7 @@ let ataqueEnemigoObjeto=[]
 let enemigoColisionObjeto = []
 let mascotaJugadorObjeto = []
 let mapaBackground = new Image()
-mapaBackground.src = "https://drive.google.com/uc?export=view&id=1fFgiaLX8ipvhTpPNcx7L6Afy9JUHuIZ-"
+mapaBackground.src = "https://jesusramon2192.github.io/mokepon/assets/mokemap.png"
 let alturaDeseada 
 const anchoMaximoMapa = 350
 let anchoMapa = window.innerWidth - 20
@@ -97,19 +97,19 @@ class Mokepon{
     }
 }
  
-let hipodoge=new Mokepon("Hipodoge", "https://drive.google.com/uc?export=view&id=1pXKP0Az541sw2Nxk-BoDg-cSddIRkyVF&rl", 5, "AGUA", "https://drive.google.com/uc?export=view&id=1PwQIJsF6gkDkODBVgyRQB-KgXiY0imfX")
-let capipepo=new Mokepon("Capipepo", "https://drive.google.com/uc?export=view&id=1_783SjjS2vBj1whiapCFhVs3EfXFyh7M&rl", 5, "TIERRA", "https://drive.google.com/uc?export=view&id=16wOL3nZDVb1E-Vd4fv7YOrJzHa0hSsFq")
-let ratigueya=new Mokepon("Ratigueya", "https://drive.google.com/uc?export=view&id=1WlZ11Sko7wxJYs0R7h0PTK4u9QmEsMVB&rl", 5, "FUEGO", "https://drive.google.com/uc?export=view&id=1rFye6Avv8oAcN73TAUu3JSuotzjakqKJ")
-let langostelvis= new Mokepon("Langostelvis", "https://drive.google.com/uc?export=view&id=1UZHT-DVx1cR_WwR2HEx6XO7VKMdlwuGp", 5, "AGUA", "https://drive.google.com/uc?export=view&id=1UZHT-DVx1cR_WwR2HEx6XO7VKMdlwuGp" )
-let tucapalma=new Mokepon("Tucapalma", "https://drive.google.com/uc?export=view&id=1nlbdZ5G4mL0oHbEtPKN19EaDfpMY85sR", 5, "AIRE", "https://drive.google.com/uc?export=view&id=1nlbdZ5G4mL0oHbEtPKN19EaDfpMY85sR")
-let pydos=new Mokepon("Pydos", "https://drive.google.com/uc?export=view&id=1-O5jY7NCmaJ4PufLp2esFgNV_6lQjZ0g", 5, "VENENO", "https://drive.google.com/uc?export=view&id=1-O5jY7NCmaJ4PufLp2esFgNV_6lQjZ0g")
+let hipodoge=new Mokepon("Hipodoge", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_hipodoge_attack.png", 5, "AGUA", "https://jesusramon2192.github.io/mokepon/assets/hipodoge.png")
+let capipepo=new Mokepon("Capipepo", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_capipepo_attack.png", 5, "TIERRA", "https://jesusramon2192.github.io/mokepon/assets/capipepo.png")
+let ratigueya=new Mokepon("Ratigueya", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_ratigueya_attack.png", 5, "FUEGO", "https://jesusramon2192.github.io/mokepon/assets/ratigueya.png")
+let langostelvis= new Mokepon("Langostelvis", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_langostelvis_attack.png", 5, "AGUA", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_langostelvis_attack.png" )
+let tucapalma=new Mokepon("Tucapalma", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_tucapalma_attack.png", 5, "AIRE", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_tucapalma_attack.png")
+let pydos=new Mokepon("Pydos", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_pydos_attack.png", 5, "VENENO", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_pydos_attack.png")
  
-let hipodogeEnemigo=new Mokepon("Hipodoge", "https://drive.google.com/uc?export=view&id=1pXKP0Az541sw2Nxk-BoDg-cSddIRkyVF&rl", 5, "AGUA", "https://drive.google.com/uc?export=view&id=1PwQIJsF6gkDkODBVgyRQB-KgXiY0imfX", aleatorio(20, 710), aleatorio(20, 500))
-let capipepoEnemigo=new Mokepon("Capipepo", "https://drive.google.com/uc?export=view&id=1_783SjjS2vBj1whiapCFhVs3EfXFyh7M&rl", 5, "TIERRA", "https://drive.google.com/uc?export=view&id=16wOL3nZDVb1E-Vd4fv7YOrJzHa0hSsFq", aleatorio(20, 710), aleatorio(20, 500))
-let ratigueyaEnemigo=new Mokepon("Ratigueya", "https://drive.google.com/uc?export=view&id=1WlZ11Sko7wxJYs0R7h0PTK4u9QmEsMVB&rl", 5, "FUEGO", "https://drive.google.com/uc?export=view&id=1rFye6Avv8oAcN73TAUu3JSuotzjakqKJ", aleatorio(20, 710), aleatorio(20, 500))
-let langostelvisEnemigo= new Mokepon("Langostelvis", "https://drive.google.com/uc?export=view&id=1UZHT-DVx1cR_WwR2HEx6XO7VKMdlwuGp", 5, "AGUA", "https://drive.google.com/uc?export=view&id=1UZHT-DVx1cR_WwR2HEx6XO7VKMdlwuGp", aleatorio(20, 710), aleatorio(20, 500) )
-let tucapalmaEnemigo=new Mokepon("Tucapalma", "https://drive.google.com/uc?export=view&id=1nlbdZ5G4mL0oHbEtPKN19EaDfpMY85sR", 5, "AIRE", "https://drive.google.com/uc?export=view&id=1nlbdZ5G4mL0oHbEtPKN19EaDfpMY85sR", aleatorio(20, 710), aleatorio(20, 500))
-let pydosEnemigo=new Mokepon("Pydos", "https://drive.google.com/uc?export=view&id=1-O5jY7NCmaJ4PufLp2esFgNV_6lQjZ0g", 5, "VENENO", "https://drive.google.com/uc?export=view&id=1-O5jY7NCmaJ4PufLp2esFgNV_6lQjZ0g", aleatorio(20, 710), aleatorio(20, 500))
+let hipodogeEnemigo=new Mokepon("Hipodoge", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_hipodoge_attack.png", 5, "AGUA", "https://jesusramon2192.github.io/mokepon/assets/hipodoge.png", aleatorio(20, 710), aleatorio(20, 500))
+let capipepoEnemigo=new Mokepon("Capipepo", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_capipepo_attack.png", 5, "TIERRA", "https://jesusramon2192.github.io/mokepon/assets/capipepo.png", aleatorio(20, 710), aleatorio(20, 500))
+let ratigueyaEnemigo=new Mokepon("Ratigueya", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_ratigueya_attack.png", 5, "FUEGO", "https://jesusramon2192.github.io/mokepon/assets/ratigueya.png", aleatorio(20, 710), aleatorio(20, 500))
+let langostelvisEnemigo= new Mokepon("Langostelvis", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_langostelvis_attack.png", 5, "AGUA", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_langostelvis_attack.png", aleatorio(20, 710), aleatorio(20, 500) )
+let tucapalmaEnemigo=new Mokepon("Tucapalma", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_tucapalma_attack.png", 5, "AIRE", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_tucapalma_attack.png", aleatorio(20, 710), aleatorio(20, 500))
+let pydosEnemigo=new Mokepon("Pydos", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_pydos_attack.png", 5, "VENENO", "https://jesusramon2192.github.io/mokepon/assets/mokepons_mokepon_pydos_attack.png", aleatorio(20, 710), aleatorio(20, 500))
  
  
 hipodoge.ataques.push(
